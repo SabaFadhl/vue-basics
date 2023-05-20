@@ -9,6 +9,7 @@
   <body>
     <div id="app">
       <h3> Welcome {{name}}</h3>
+      {{sayWelcome()}}
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
@@ -17,6 +18,11 @@
       el: "#app",
       data: {
         name:"Saba"
+      },
+      methods:{
+        sayWelcome: function (){
+          console.log('Welcome ' + this.name)
+        }
       }
     })
   </script>
